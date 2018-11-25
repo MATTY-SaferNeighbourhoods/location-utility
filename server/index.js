@@ -13,3 +13,8 @@ let PORT = process.env.PORT || 7069;
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}!`);
   });
+
+
+app.get('/', (req, res)=>{
+    res.send(`hello y'all!`)
+})
